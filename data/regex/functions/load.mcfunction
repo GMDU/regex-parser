@@ -1,1 +1,1 @@
-tellraw @a {"text": "Reloaded!"}
+function regex:version
