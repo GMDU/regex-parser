@@ -1,4 +1,4 @@
-data modify storage regex:version name set value "MC Regex"
+data modify storage regex:version name set value "Regex Parser"
 
 data modify storage regex:version major set value 0
 data modify storage regex:version minor set value 1
