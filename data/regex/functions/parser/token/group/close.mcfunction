@@ -1,6 +1,6 @@
 execute store result score .length regex.parser.private run data get storage regex:parser/private stack
 
-execute if score .length regex.parser.private matches ..1 run data modify storage regex:parser error set value "[Group]: No groups to close"
+execute if score .length regex.parser.private matches ..1 run data modify storage regex:parser error set value "[Group] - No groups to close"
 execute unless data storage regex:parser error run data modify storage regex:parser/private temp set value {type: "group", value: [], quantifier: "exactly_one"}
 
 execute unless data storage regex:parser error run data modify storage regex:parser/private temp.value set from storage regex:parser/private stack[-1]
