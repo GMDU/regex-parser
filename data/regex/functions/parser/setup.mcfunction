@@ -1,1 +1,1 @@
-data modify storage regex:parser/private stack set value [[]]
+data modify storage regex:parser/private stack set value [[[]]]

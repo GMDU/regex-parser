@@ -6,6 +6,6 @@ execute unless data storage regex:parser error run data modify storage regex:par
 execute unless data storage regex:parser error run data modify storage regex:parser/private temp.value set from storage regex:parser/private stack[-1]
 execute unless data storage regex:parser error run data remove storage regex:parser/private stack[-1]
 
-execute unless data storage regex:parser error run data modify storage regex:parser/private stack[-1] append from storage regex:parser/private temp
+execute unless data storage regex:parser error run data modify storage regex:parser/private stack[-1][-1] append from storage regex:parser/private temp
 
 scoreboard players set .found_character regex.parser.private 1

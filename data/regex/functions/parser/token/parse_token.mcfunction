@@ -6,6 +6,8 @@ execute if data storage regex:parser/private {current_token:"^"} run function re
 execute if data storage regex:parser/private {current_token:"("} run function regex:parser/token/group/open
 execute if data storage regex:parser/private {current_token:")"} run function regex:parser/token/group/close
 
+execute if data storage regex:parser/private {current_token:"|"} run function regex:parser/token/or
+
 
 execute if data storage regex:parser/private {current_token:"?"} run function regex:parser/token/quantifier/zero_or_one
 execute if data storage regex:parser/private {current_token:"*"} run function regex:parser/token/quantifier/zero_or_more
