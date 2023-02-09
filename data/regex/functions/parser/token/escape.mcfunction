@@ -5,4 +5,4 @@ data modify storage regex:parser/private stack[-1][-1][-1].value set from storag
 data remove storage regex:parser/private tokens[0]
 
 
-scoreboard players set .found_character regex.parser.private 1
+scoreboard players set .found_token regex.parser.private 1

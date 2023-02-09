@@ -2,4 +2,4 @@ data modify storage regex:parser/private stack[-1][-1] append value {type: "lite
 data modify storage regex:parser/private stack[-1][-1][-1].value set from storage regex:parser/private current_token
 
 
-scoreboard players set .found_character regex.parser.private 1
+scoreboard players set .found_token regex.parser.private 1
