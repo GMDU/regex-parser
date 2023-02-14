@@ -1,0 +1,1 @@
+execute if data storage regex:match branch[] run data modify storage regex:match next append from storage regex:match branch

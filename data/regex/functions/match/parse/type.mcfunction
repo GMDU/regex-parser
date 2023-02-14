@@ -1,0 +1,2 @@
+execute if data storage regex:match instruction{type:"literal"} run function regex:match/parse/type/literal
+execute if data storage regex:match instruction{type:"character_set"} run function regex:match/parse/type/character_set
