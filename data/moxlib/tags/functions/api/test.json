@@ -1,0 +1,9 @@
+{
+  "values": [
+    "regex:spec/beginning",
+    "regex:spec/end",
+    "regex:spec/greedy",
+    "regex:spec/or",
+    "regex:spec/group"
+  ]
+}
