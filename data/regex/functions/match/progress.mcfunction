@@ -1,6 +1,7 @@
-data modify storage regex:match output append from storage regex:match current
+data modify storage regex:match matches append from storage regex:match current
+execute if data storage regex:match {endpoint:true} run data modify storage regex:match output set from storage regex:match matches
 
 execute if data storage regex:match next[] run function regex:match/progress/has_next
 execute unless data storage regex:match next[] run function regex:match/progress/missing_next
 
-data modify storage regex:match next set value []
+data merge storage regex:match {endpoint:false,next:[]}

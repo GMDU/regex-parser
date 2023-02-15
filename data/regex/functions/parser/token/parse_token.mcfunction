@@ -4,6 +4,7 @@ execute if data storage regex:parser/private {current_token:"\\"} run function r
 
 execute if data storage regex:parser/private {current_token:"."} run function regex:parser/token/element/wildcard
 execute if data storage regex:parser/private {current_token:"^"} run function regex:parser/token/element/beginning
+execute if data storage regex:parser/private {current_token:"$"} run function regex:parser/token/element/end
 
 execute if data storage regex:parser/private {current_token:"("} run function regex:parser/token/group/open
 execute if data storage regex:parser/private {current_token:")"} run function regex:parser/token/group/close
