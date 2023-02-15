@@ -4,4 +4,4 @@ execute if data storage regex:match {endpoint:true} run data modify storage rege
 execute if data storage regex:match next[] run function regex:match/progress/has_next
 execute unless data storage regex:match next[] run function regex:match/progress/missing_next
 
-data merge storage regex:match {endpoint:false,next:[]}
+data merge storage regex:match {endpoint:false,next:[],required:false}
