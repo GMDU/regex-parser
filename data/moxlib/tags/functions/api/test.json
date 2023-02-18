@@ -4,6 +4,7 @@
     "regex:spec/end",
     "regex:spec/greedy",
     "regex:spec/or",
-    "regex:spec/group"
+    "regex:spec/group",
+    "regex:spec/character_range"
   ]
 }
