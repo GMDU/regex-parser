@@ -5,6 +5,6 @@
     "regex:spec/greedy",
     "regex:spec/or",
     "regex:spec/group",
-    "regex:spec/character_range"
+    "regex:spec/character_set"
   ]
 }
