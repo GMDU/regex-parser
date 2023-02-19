@@ -1,7 +1,9 @@
-data modify storage moxlib:api/string/to_array target set from storage regex:match target
-function moxlib:api/string/to_array
+data modify storage regex:match/iterate target set value []
 
-data modify storage regex:match/iterate target set from storage moxlib:api/string/to_array output
+execute unless data storage regex:match target[0] run function regex:match/tokenise/string
+execute if data storage regex:match target[0] unless data storage regex:api/match flags{process_target:false} run function regex:match/tokenise/array
+execute if data storage regex:api/match flags{process_target:false} run data modify storage regex:match/iterate target set from storage regex:match target
+
 data modify storage regex:match/iterate target prepend value "^s"
 data modify storage regex:match/iterate target append value "^x"
 

@@ -7,3 +7,5 @@ function regex:match/init
 
 data modify storage regex:api/match output set from storage regex:match output
 data modify storage regex:api/match success set from storage regex:match success
+
+data remove storage regex:api/match flags
