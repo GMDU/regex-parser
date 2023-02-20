@@ -1,5 +1,6 @@
 data modify storage regex:parser target set from storage regex:api/match pattern
-function regex:parser/init
+execute unless data storage regex:api/match flags{parse: false} run function regex:parser/init
+execute if data storage regex:api/match flags{parse: false} run data modify storage regex:parser output set from storage regex:api/match pattern
 
 data modify storage regex:match target set from storage regex:api/match target
 data modify storage regex:match pattern set from storage regex:parser output
