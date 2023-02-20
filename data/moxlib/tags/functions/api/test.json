@@ -6,6 +6,6 @@
     "regex:spec/or",
     "regex:spec/group",
     "regex:spec/character_set",
-    "regex:spec/array_target"
+    "regex:spec/flags"
   ]
 }
