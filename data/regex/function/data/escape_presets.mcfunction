@@ -12,14 +12,10 @@ data modify storage regex:parser/constants escape_presets append from storage re
 data modify storage regex:parser/constants escape_presets[-1].character set value "D"
 data modify storage regex:parser/constants escape_presets[-1].preset.inverted set value true
 
-data modify storage regex:parser/constants escape_presets append value {character: "s", preset: {type: "character_set", value: [" "], quantifier: "exactly_one", inverted: false}}
-
-data modify storage regex:parser/constants escape_presets[-1].preset.value append from storage moxlib:api/string/newline
+data modify storage regex:parser/constants escape_presets append value {character: "s", preset: {type: "character_set", value: [" ", "\n"], quantifier: "exactly_one", inverted: false}}
 
 data modify storage regex:parser/constants escape_presets append from storage regex:parser/constants escape_presets[-1]
 data modify storage regex:parser/constants escape_presets[-1].character set value "S"
 data modify storage regex:parser/constants escape_presets[-1].preset.inverted set value true
 
-data modify storage regex:parser/constants escape_presets append value {character: "n", preset: {type: "literal", value: "", quantifier: "exactly_one"}}
-
-data modify storage regex:parser/constants escape_presets[-1].preset.value set from storage moxlib:api/string/newline
+data modify storage regex:parser/constants escape_presets append value {character: "n", preset: {type: "literal", value: "\n", quantifier: "exactly_one"}}

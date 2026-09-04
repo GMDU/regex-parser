@@ -1,5 +1,3 @@
-**This library requires [Moxlib](https://modrinth.com/datapack/moxlib) to function.**
-
 # GMDU Regex Library
 **by Gears and Moxvallix.**
 

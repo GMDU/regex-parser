@@ -1,0 +1,1 @@
+$data modify storage regex:parser/private escape.output set from storage regex:parser/constants escape_presets[{character: "$(character)"}]

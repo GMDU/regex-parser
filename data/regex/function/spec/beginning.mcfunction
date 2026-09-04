@@ -3,20 +3,20 @@ data modify storage regex:api/match target set value "abcdef"
 
 function regex:api/match
 
-data modify storage moxlib:test/it describes set value "A successful match with beginning of string."
-data modify storage moxlib:test/it expects set value {success:true, output:["a","b","c"]}
-data modify storage moxlib:test/it receives.success set from storage regex:api/match success
-data modify storage moxlib:test/it receives.output set from storage regex:api/match output
+data modify storage observer:test/it describes set value "A successful match with beginning of string."
+data modify storage observer:test/it expects set value {success:true, output:["a","b","c"]}
+data modify storage observer:test/it receives.success set from storage regex:api/match success
+data modify storage observer:test/it receives.output set from storage regex:api/match output
 
-function moxlib:api/test/perform
+function observer:api/perform
 
 data modify storage regex:api/match target set value "zabcdef"
 
 function regex:api/match
 
-data modify storage moxlib:test/it describes set value "An unsuccessful match with beginning of string."
-data modify storage moxlib:test/it expects set value {success:false, output:[]}
-data modify storage moxlib:test/it receives.success set from storage regex:api/match success
-data modify storage moxlib:test/it receives.output set from storage regex:api/match output
+data modify storage observer:test/it describes set value "An unsuccessful match with beginning of string."
+data modify storage observer:test/it expects set value {success:false, output:[]}
+data modify storage observer:test/it receives.success set from storage regex:api/match success
+data modify storage observer:test/it receives.output set from storage regex:api/match output
 
-function moxlib:api/test/perform
+function observer:api/perform

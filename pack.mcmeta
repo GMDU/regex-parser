@@ -1,6 +1,9 @@
 {
   "pack": {
-      "pack_format": 48,
-      "description": "A regex parser in Minecraft"
+    "min_format": 69,
+    "max_format": 119,
+    "description": "A regex parser in Minecraft",
+    "pack_format":119,
+    "supported_formats": [69, 119]
   }
 }
