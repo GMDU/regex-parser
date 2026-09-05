@@ -1,0 +1,1 @@
+$execute if data storage regex:utils/filter {target: ["$(key)"]} run data modify storage regex:utils/filter output set value false
